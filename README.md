@@ -1,0 +1,1 @@
+Simple program implements reading from DB MSSQL using Web API build using ASP.NET and Entity framework, which made work easier. In software are implemented only GET Requests. Also to protect some sensitive data was used ____DTOes. 
