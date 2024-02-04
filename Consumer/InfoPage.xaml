@@ -1,0 +1,55 @@
+﻿<Window x:Class="Consumer.InfoPage"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Consumer"
+        mc:Ignorable="d"
+        Title="InfoPage" Height="450" Width="800">
+    <Grid >
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="4*"/>
+        </Grid.ColumnDefinitions>
+        <Label Content="Owner" Grid.Column="0"/>
+        <Label Content="Name" Grid.Column="0" Margin="0,27,110,380"/>
+        <TextBox Name="Name" Grid.Column="0" Margin="55,27,5,384"/>
+        <Label Content="Surname" Grid.Column="0" Margin="0,54,110,353"/>
+        <TextBox Name="Surname" Grid.Column="0" Margin="55,58,5,353"/>
+        <Label Content="Sex" Grid.Column="0" Margin="0,81,110,326"/>
+        <TextBox Name="Sex" Grid.Column="0" Margin="55,86,5,325"/>
+        <Label Content="Born" Grid.Column="0" Margin="0,108,110,299"/>
+        <TextBox Name="Born" Grid.Column="0" Margin="55,114,5,297"/>
+        <Label Content="Country" Grid.Column="0" Margin="0,140,101,267"/>
+        <TextBox Name="Country" Grid.Column="0" Margin="55,144,5,267"/>
+        <Label Content="PESEL" Grid.Column="0" Margin="0,172,101,235"/>
+        <TextBox Name="PESEL" Grid.Column="0" Margin="55,172,5,239" Visibility="Hidden"/>
+        <Label Content="HOME" Grid.Column="0" Margin="0,200,101,207" />
+        <TextBox Name="HOME" Grid.Column="0" Margin="55,200,5,86" Visibility="Hidden" TextWrapping="Wrap" AcceptsReturn="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto"/>
+        <Label Content="PHONE" Grid.Column="0" Margin="0,353,101,54" />
+        <TextBox Name="PHONE" Grid.Column="0" Margin="50,355,10,56" Visibility="Hidden"/>
+        <Button Name="OwnerSensitive" Content="Sensitive" Grid.Column="0" Margin="0,385,0,0" Click="OwnerSensitive_Click"/>
+
+        <Label Content="Number" Grid.Column="1" Margin="45,23,535,383"/>
+        <Label Content="pin" Grid.Column="1" Margin="45,58,535,348"/>
+        <Label Content="CVV" Grid.Column="1" Margin="128,58,452,348"/>
+        <Label Content="Name" Grid.Column="1" Margin="221,58,359,348"/>
+        <Label Content="ExpireDate" Grid.Column="1" Margin="45,136,535,270"/>
+
+        <TextBlock Name="number" Grid.Column="1" Margin="110,27,248,380"/>
+        <TextBlock Name="pin" Grid.Column="1" Margin="45,96,535,311"/>
+        <TextBlock Name="cvv" Grid.Column="1" Margin="128,97,452,310"/>
+        <TextBlock Name="cardName" Grid.Column="1" Margin="221,98,248,309"/>
+        <TextBlock Name="expireDate" Grid.Column="1" Margin="128,140,248,267"/>
+        <Button Grid.Column="1" Content="GetSensitive" Margin="45,192,248,209" Click="Button_Click"/>
+
+        <ComboBox Grid.Column="1" Name="Cards" Margin="45,240,248,160" SelectionChanged="Cards_SelectionChanged" />
+
+        <Button Content="Show cashins" Grid.Column="1" Margin="43,292,389,109" Click="Button_Click_1"/>
+        <TextBox Name="cashinsText" Margin="43,341,389,12" TextWrapping="Wrap" AcceptsReturn="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Grid.Column="1"/>
+
+        <Button Content="Show cashout" Grid.Column="1" Margin="260,292,172,109" Click="Button_Click_2"/>
+        <TextBox Name="cashoutsText" Margin="260,341,172,12" TextWrapping="Wrap" AcceptsReturn="True" HorizontalScrollBarVisibility="Auto" VerticalScrollBarVisibility="Auto" Grid.Column="1"/>
+
+    </Grid>
+</Window>

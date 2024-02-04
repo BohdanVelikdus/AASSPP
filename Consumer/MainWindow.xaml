@@ -1,0 +1,16 @@
+﻿<Window x:Class="Consumer.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:Consumer"
+        mc:Ignorable="d"
+        Title="MainWindow" Height="450" Width="300">
+    <Grid>
+        <Label Content="Enter NUMBER of Card" Margin="75,24,75,379"/>
+        <TextBox Name="Number" Margin="75,55,88,343" />
+        <Label Content="Enter PIN of Card" Margin="75,96,75,307"/>
+        <TextBox Name="pin" Margin="75,127,88,271" />
+        <Button Name="Check" Content="Log In" Margin="75,179,88,176" Click="Check_Click"/>
+    </Grid>
+</Window>
